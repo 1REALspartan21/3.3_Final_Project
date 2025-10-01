@@ -5,133 +5,269 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
+  
+  
+  
+outline: 1px solid black;  
+  }
+
+
 
 body {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-h1{
-    font-size: 44px;
+h1 {
+  font-size: 48px;
 }
-
 
 ul {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 li {
-    font-size: 14px;
-    padding: 0 20px;
-    display: flex;
-    text-decoration: none;
+  font-size: 14px;
+  padding: 0 20px;
+  display: flex;
+  text-decoration: none;
 }
 
 li:hover,
 .login:hover {
-    text-decoration: underline;
-    color: rgb(100, 21, 255);
+  text-decoration: underline;
+  color: rgb(100, 21, 255);
 }
 
 span {
-    color: rgb(100, 21, 255);
+  color: rgb(100, 21, 255);
 }
-
 
 /* Nav Bar */
 
 .nav__bar {
-    height: 140px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav__title {
-    width: 130px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
+  width: 130px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logoT {
-    max-width: 36px;
+  max-width: 36px;
 }
 
 .nav__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .login {
-    font-size: 14px;
-    padding: 0px 20px 0 60px;
-
+  font-size: 14px;
+  padding: 0px 20px 0 60px;
 }
 
 .btn {
-    width: 130px;
-    height: 40px;
-    padding: 8px 24px;
-    background-color: rgb(100, 21, 255);
-    border: none;
-    border-radius: 20px;
-    color: white;
+  width: 130px;
+  height: 40px;
+  padding: 8px 24px;
+  background-color: rgb(100, 21, 255);
+  border: none;
+  border-radius: 20px;
+  color: white;
 }
 
+.purple__titles {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
 
 /* Landing Page */
 
-.landing__row{
-    display: flex;
+.landing__row {
+  display: flex;
 }
 
 .landing__header {
-    padding: 50px 0 40px;
+  padding: 50px 0 40px;
 }
 
 .landing__description {
-    padding: 20px 0;
-    width: 510px;
-    font-size: 20px;
+  padding: 20px 0;
+  width: 510px;
+  font-size: 20px;
 }
 
 .email__box {
-    width: 85%;
-    border-radius: 50px;
-    display: flex;
-    border: 2px solid rgb(229, 231, 235);
+  width: 85%;
+  border-radius: 50px;
+  display: flex;
+  border: 2px solid rgb(229, 231, 235);
 }
 
-.landing__email { 
-    margin-left: 26px; 
-    width: 65%;
-    height: 60px;
-    font-size: 16px;
-    border: hidden;
+.landing__email {
+  margin-left: 26px;
+  width: 65%;
+  height: 60px;
+  font-size: 16px;
+  border: hidden;
 }
 
 .landing__button {
-    width: 140px;
-    margin: 10px;
+  width: 140px;
+  margin: 15px;
 }
 
 .img__customers {
-    width: 300px;
-    opacity: 0.4;
+  width: 300px;
+  opacity: 0.4;
 }
 
 .img__landing {
-    width: 760px;
+  width: 760px;
 }
 
 .customers__text {
-    padding-top: 50px;
+  margin: 20px 0;
+  font-weight: 1000;
+  font-size: 12px;
+  padding-top: 50px;
+  opacity: 0.3;
+features}
+
+/* Features */
+
+.features {
+    padding: 200px 0;
 }
+
+.features__title {
+  text-align: center;
+  padding: 40px 0 24px;
+}
+
+.features__header {
+  color: #243e63;
+  letter-spacing: 2px;
+  font-size: 52px;
+  font-weight: 900;
+  margin: 0 16px 16px;
+  text-align: center;
+}
+
+.features__para {
+  padding: 20px 260px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+
+.features__container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features__services {
+    padding: 20px;
+    display: flex;
+}
+
+.features__row {
+    width: 200px;
+    padding: 0 20px 20px;
+    
+}
+
+.features__icon {
+    padding: 12px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.features__container--title {
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.features__services--para {
+    font-size: 12px;
+    opacity: 0.5;
+    line-height: 1.7;
+}
+
+
+/* Quality */
+
+.quality__container {
+    display: flex;
+
+}
+
+.quality__description {
+    max-width: 550px;
+
+
+}
+.quality__img {
+    width: 500px;
+
+}
+
+.quality__header {
+    max-width: 400px;
+}
+
+.quality__para {
+}
+
+.btn  learn__more {
+padding-top: 200px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
