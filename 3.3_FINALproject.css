@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 
-  outline: 1px solid black;
 }
 
 body {
@@ -15,9 +14,6 @@ body {
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 48px;
-}
 
 ul {
   display: flex;
@@ -38,8 +34,22 @@ li:hover,
   color: rgb(100, 21, 255);
 }
 
-span {
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: #243e63;
+  letter-spacing: 1.5px;
+}
+
+span,
+h2 {
   color: rgb(100, 21, 255);
+}
+
+h2 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 900;
 }
 
 /* Nav Bar */
@@ -83,11 +93,6 @@ span {
   color: white;
 }
 
-.purple__titles {
-  font-size: 16px;
-  letter-spacing: 2px;
-  font-weight: 900;
-}
 
 /* Landing Page */
 
@@ -155,10 +160,6 @@ span {
 }
 
 .features__header {
-  color: #243e63;
-  letter-spacing: 2px;
-  font-size: 52px;
-  font-weight: 900;
   margin: 0 16px 16px;
   text-align: center;
 }
@@ -219,20 +220,12 @@ span {
   display: flex;
 }
 
-.quality__title {
-
-}
-
 .quality__description {
   max-width: 550px;
 }
 
 .quality__header {
   margin: 16px 0;
-  font-size: 48px;
-  font-weight: 900;
-  color: #243e63;
-  letter-spacing: 1.5px;
   max-width: 500px;
 }
 
@@ -250,3 +243,83 @@ span {
   width: 76%;
   margin: 20px 0 0 120px;
 }
+
+
+/* Steps */
+
+
+.steps__container {
+  display: flex;
+  padding: 100px 0;
+  height: 750px;
+  
+}
+
+.steps_img {
+  padding: 0 20px;
+  margin: 60px 0;
+  width: 680px;
+}
+
+.steps__header {
+
+}
+
+.steps {
+  width: 660px;
+}
+
+.steps__row {
+margin-left: 24px;
+}
+
+.steps__title {
+  padding: 0 0 24px;
+}
+
+
+.steps__directions {
+  display: flex;
+  padding: 24px 0;
+
+}
+
+.step__number {
+  padding: 0px 20px 32px;
+  font-size: 40px;
+  color: lightgray;
+  font-weight: 700;
+
+}
+
+.step__title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 0 12px;
+
+}
+
+.step__para {
+
+  line-height: 1.5;
+  max-width: 300px;
+  font-size: 14px; 
+  font-weight: 500;
+  opacity: .4;
+
+}
+
+
+.values__container {
+  padding: 100px 0;
+}
+
+
+
+
+
+
+
+
+
+
