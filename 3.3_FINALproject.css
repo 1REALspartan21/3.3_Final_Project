@@ -5,7 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-
+  
 }
 
 body {
@@ -261,10 +261,6 @@ h2 {
   width: 680px;
 }
 
-.steps__header {
-
-}
-
 .steps {
   width: 660px;
 }
@@ -287,7 +283,7 @@ margin-left: 24px;
 .step__number {
   padding: 0px 20px 32px;
   font-size: 40px;
-  color: lightgray;
+  color: #cbd5e0;
   font-weight: 700;
 
 }
@@ -309,10 +305,226 @@ margin-left: 24px;
 
 }
 
+/* Values */
 
 .values__container {
-  padding: 100px 0;
+  padding: 100px 0 200px;
+  display: flex;
 }
+
+.values_header{
+  width: 80%;
+  padding: 20px 0 50px;
+  font-size: 48px;
+
+}
+
+.values__description {
+  display: flex;
+}
+
+
+.values__para {
+  margin: 0 0 36px;
+  line-height: 1.5;
+  max-width: 600px;
+  font-size: 20px; 
+  font-weight: 400;
+  color: #718096;
+  
+}
+
+.value__title {
+  display: flex;
+  align-items: center;
+
+}
+.values__title {
+  padding: 0 12px;
+}
+
+.fa-solid {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.fa-dollar-sign {
+  color: #243e63;
+  background-color: #9ae6b4;
+}
+
+.fa-suitcase {
+  color: #243e63;
+  background-color: #feb2b2
+}
+
+.value__para {
+  font-size: 16px;
+  width: 300px;
+  padding: 20px 40px 0 0;
+}
+
+.value__btn {
+  padding-top: 20px;
+}
+
+.values__img {
+  width: 650px;
+  padding: 20px 0;
+  
+}
+
+/* Pricing */
+
+.plan__header,
+.plan__para,
+.plan__title,
+.plan__price, 
+.monthly,
+.bottom__box{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.plan__header {
+  padding: 20px 0;
+  
+}
+
+.plan__para {
+  text-align: center;
+  color: #7c8ba1;
+  font-weight: 500px;
+  margin: 0 auto;
+  max-width: 600px;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+}
+
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.plan__box {
+  outline: 2px solid#f5f4f4;
+  width: 375px;
+  margin: 20px;
+  
+}
+
+.stripe1 {
+  border-top: 5px solid rgb(56, 178, 172);
+  border-radius: 10px;
+}
+
+.plan__buy1 {
+  background-color: rgb(56, 178, 172);
+  font-weight: 600;
+
+}
+
+.plan__box2 {
+  border-radius: 10px;
+  background-color: rgb(102, 126, 234);
+}
+
+.plan__buy2 {
+  background-color: white;
+  color: #6415ff;
+  font-weight: 900;
+}
+
+
+.stripe3 {
+  border-top: 5px solid rgb(245, 101, 101);
+  border-radius: 10px;
+}
+.plan__buy3 {
+  background-color: rgb(245, 101, 101);
+  font-weight: 600;
+}
+
+.mid__box{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.plan__title,
+.plan__detail {
+  padding-top: 40px;
+  font-size: 28px;
+  font-weight: 800;
+
+}
+
+.plan__price  {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.monthly {
+  padding-bottom: 40px;
+  font-size: 18px;
+  font-weight: 900;
+  color: #7c8ba1;
+  letter-spacing: 2px;
+}
+
+.plan__detail {
+  padding: 12px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.plan__details {
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #7c8ba1;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.bottom__box {
+  padding-top: 40px;
+  
+}
+
+.business__text--color {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
