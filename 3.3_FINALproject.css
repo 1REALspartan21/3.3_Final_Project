@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+
   
 }
 
@@ -417,12 +418,17 @@ margin-left: 24px;
   outline: 2px solid#f5f4f4;
   width: 375px;
   margin: 20px;
+  height: 600px;
+}
+
+.top__box {
+  padding: 32px;
   
 }
 
-.stripe1 {
+.plan__box1 {
   border-top: 5px solid rgb(56, 178, 172);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .plan__buy1 {
@@ -432,20 +438,21 @@ margin-left: 24px;
 }
 
 .plan__box2 {
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: rgb(102, 126, 234);
 }
 
 .plan__buy2 {
-  background-color: white;
   color: #6415ff;
+  background-color: white;
   font-weight: 900;
 }
 
-
-.stripe3 {
+.plan__box3 {
   border-top: 5px solid rgb(245, 101, 101);
-  border-radius: 10px;
+  border-radius:  5px;
+  
+
 }
 .plan__buy3 {
   background-color: rgb(245, 101, 101);
@@ -453,7 +460,8 @@ margin-left: 24px;
 }
 
 .mid__box{
-  height: 350px;
+  padding: 16px;
+  height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -461,8 +469,7 @@ margin-left: 24px;
 
 .plan__title,
 .plan__detail {
-  padding-top: 40px;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 800;
 
 }
@@ -473,7 +480,6 @@ margin-left: 24px;
 }
 
 .monthly {
-  padding-bottom: 40px;
   font-size: 18px;
   font-weight: 900;
   color: #7c8ba1;
@@ -482,15 +488,14 @@ margin-left: 24px;
 
 .plan__detail {
   padding: 12px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   display: flex;
   justify-content: center;
 }
 
 .plan__details {
-  padding: 12px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
   color: #7c8ba1;
   display: flex;
@@ -499,8 +504,7 @@ margin-left: 24px;
 }
 
 .bottom__box {
-  padding-top: 40px;
-  
+  padding: 32px ;
 }
 
 .business__text--color {
