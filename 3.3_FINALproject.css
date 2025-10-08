@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap");
 
-
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-
 }
 
 .row {
@@ -15,7 +12,6 @@
   max-width: 1300px;
   margin: 0 auto;
 }
-
 
 ul {
   display: flex;
@@ -86,7 +82,8 @@ h2 {
   padding: 0px 20px 0 60px;
 }
 
-.btn {
+button,
+.nav__button {
   width: 130px;
   height: 40px;
   padding: 8px 24px;
@@ -96,10 +93,9 @@ h2 {
   color: white;
 }
 
-.btn:hover {
+button:hover {
   cursor: pointer;
 }
-
 
 /* Landing Page */
 
@@ -250,15 +246,12 @@ h2 {
   margin: 20px 0 0 120px;
 }
 
-
 /* Steps */
-
 
 .steps__container {
   display: flex;
   padding: 100px 0;
   height: 750px;
-  
 }
 
 .steps_img {
@@ -272,18 +265,16 @@ h2 {
 }
 
 .steps__row {
-margin-left: 24px;
+  margin-left: 24px;
 }
 
 .steps__title {
   padding: 0 0 24px;
 }
 
-
 .steps__directions {
   display: flex;
   padding: 24px 0;
-
 }
 
 .step__number {
@@ -291,24 +282,20 @@ margin-left: 24px;
   font-size: 40px;
   color: #cbd5e0;
   font-weight: 700;
-
 }
 
 .step__title {
   font-size: 20px;
   font-weight: 600;
   padding: 0 0 12px;
-
 }
 
 .step__para {
-
   line-height: 1.5;
   max-width: 300px;
-  font-size: 14px; 
+  font-size: 14px;
   font-weight: 500;
-  opacity: .4;
-
+  opacity: 0.4;
 }
 
 /* Values */
@@ -318,32 +305,28 @@ margin-left: 24px;
   display: flex;
 }
 
-.values_header{
+.values_header {
   width: 80%;
   padding: 20px 0 50px;
   font-size: 48px;
-
 }
 
 .values__description {
   display: flex;
 }
 
-
 .values__para {
   margin: 0 0 36px;
   line-height: 1.5;
   max-width: 600px;
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 400;
   color: #718096;
-  
 }
 
 .value__title {
   display: flex;
   align-items: center;
-
 }
 .values__title {
   padding: 0 12px;
@@ -365,7 +348,7 @@ margin-left: 24px;
 
 .fa-suitcase {
   color: #243e63;
-  background-color: #feb2b2
+  background-color: #feb2b2;
 }
 
 .value__para {
@@ -381,7 +364,6 @@ margin-left: 24px;
 .values__img {
   width: 650px;
   padding: 20px 0;
-  
 }
 
 /* Pricing */
@@ -390,9 +372,9 @@ margin-left: 24px;
 .plan__header,
 .plan__para,
 .plan__title,
-.plan__price, 
+.plan__price,
 .monthly,
-.bottom__box{
+.bottom__box {
   display: flex;
   justify-content: center;
   padding: 10px;
@@ -400,7 +382,6 @@ margin-left: 24px;
 
 .plan__header {
   padding: 16px 0;
-  
 }
 
 .plan__para {
@@ -430,7 +411,6 @@ margin-left: 24px;
 .plan__divider {
   height: 1px;
   background: #e0dfdf;
-
 }
 
 .plan__divider--b {
@@ -440,7 +420,6 @@ margin-left: 24px;
 
 .top__box {
   padding: 32px;
-  
 }
 
 .plan__box1 {
@@ -454,7 +433,6 @@ margin-left: 24px;
   border-radius: 999px;
   background-color: rgb(56, 178, 172);
   font-weight: 600;
-
 }
 
 .plan__box2 {
@@ -473,7 +451,7 @@ margin-left: 24px;
 
 .plan__box3 {
   border-top: 10px solid rgb(245, 101, 101);
-  border-radius:  10px;
+  border-radius: 10px;
 }
 
 .plan__buy3 {
@@ -484,7 +462,7 @@ margin-left: 24px;
   font-weight: 600;
 }
 
-.mid__box{
+.mid__box {
   padding: 16px;
   height: 260px;
   display: flex;
@@ -496,10 +474,9 @@ margin-left: 24px;
 .plan__detail {
   font-size: 20px;
   font-weight: 800;
-
 }
 
-.plan__price  {
+.plan__price {
   font-size: 48px;
   font-weight: 900;
 }
@@ -525,11 +502,10 @@ margin-left: 24px;
   color: #7c8ba1;
   display: flex;
   justify-content: center;
-  
 }
 
 .bottom__box {
-  padding: 32px ;
+  padding: 32px;
 }
 
 .business__text--color {
@@ -537,7 +513,6 @@ margin-left: 24px;
 }
 
 /* Testimonials */
-
 
 .container__testimonial {
   padding: 120px 0;
@@ -549,7 +524,7 @@ margin-left: 24px;
   width: 650px;
 }
 
-.testimonial__description  {
+.testimonial__description {
   padding: 60px 0 60px 60px;
 }
 
@@ -558,7 +533,7 @@ margin-left: 24px;
 }
 
 .testimonial__description--para {
-  font-size: 20px; 
+  font-size: 20px;
   font-weight: 450;
   margin-right: 20px;
   line-height: 1.6;
@@ -571,15 +546,14 @@ margin-left: 24px;
   color: gold;
   border: none;
   padding: 20px 0;
- 
 }
 
 .testimonial__para {
-  padding: 20px 0 0 ;
+  padding: 20px 0 0;
   margin-right: 20px;
   max-width: 600px;
   line-height: 1.7;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 500;
   color: #4b5461;
 }
@@ -590,7 +564,7 @@ margin-left: 24px;
   justify-content: space-between;
 }
 
-.testimonial__client{
+.testimonial__client {
   display: flex;
   align-items: center;
 }
@@ -602,7 +576,7 @@ margin-left: 24px;
 
 .testimonial__occupation {
   margin-top: 10px;
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 600;
   color: #718096;
 }
@@ -612,25 +586,26 @@ margin-left: 24px;
   width: 120px;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .vertical__divide {
-  width: 1px; 
-  height: 25%; 
+  width: 1px;
+  height: 25%;
   background-color: rgb(214, 212, 212);
   margin: 0 10px;
   display: inline-block;
   vertical-align: middle;
-
 }
 
 .fa-arrow-left,
 .fa-arrow-right {
-  color: #6415ff;
-  background-color: #ebecec; 
-  width: 50px;
-  height: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #010102;
+  background-color: #ebecec;
+  width: 48px;
+  height: 48px;
 }
 
 /* Lower Banner */
@@ -657,12 +632,15 @@ margin-left: 24px;
   width: 35%;
   display: flex;
   justify-content: flex-end;
-  
 }
 
 .banner__btn--a {
   background-color: #f56565;
   margin: 0 24px;
+}
+
+.banner__btn--b {
+  border: 2px solid #ebecec;
 }
 
 .banner__btn--a,
@@ -687,14 +665,12 @@ margin-left: 24px;
   flex-wrap: wrap;
   align-items: center;
   padding: 50px 0 40px;
-  
 }
 
-.footer__title{
+.footer__title {
   padding: 80px 0 20px;
   color: #faf7fc;
 }
-
 
 .footer__link {
   padding: 8px 0;
@@ -710,9 +686,7 @@ margin-left: 24px;
   padding: 80px 0;
   display: flex;
   justify-content: space-between;
-
 }
-
 
 .footer__logo--name {
   display: flex;
@@ -728,7 +702,6 @@ margin-left: 24px;
 .footer__copyright {
   margin: 16px;
   color: #faf7fc;
-
 }
 
 .footer__icons {
@@ -738,11 +711,12 @@ margin-left: 24px;
 .fa-facebook-f,
 .fa-twitter,
 .fa-youtube {
+  color: #010102;
   margin: 8px;
   background-color: #faf7fc;
-  height: 40px;
-  width: 40px;
-  border-radius: 25px;
+  height: 48px;
+  width: 48px;
+  border-radius: 999px;
   display: flex;
   justify-content: center;
   align-items: center;
