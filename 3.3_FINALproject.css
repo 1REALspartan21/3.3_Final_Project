@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+
 }
 
 .row {
@@ -100,8 +101,13 @@ button:hover {
 /* Landing Page */
 
 .landing__row {
+  width: 100%;
   padding: 100px 0;
   display: flex;
+}
+
+.landing__text {
+  width: 100%;
 }
 
 .landing__header {
@@ -110,7 +116,7 @@ button:hover {
 
 .landing__description {
   padding: 20px 0;
-  width: 510px;
+  width: 80%;
   font-size: 20px;
 }
 
@@ -134,13 +140,13 @@ button:hover {
   margin: 15px;
 }
 
-.img__customers {
+.customers__img {
   width: 300px;
   opacity: 0.4;
 }
 
-.img__landing {
-  width: 760px;
+.landing__img {
+  width: 100%;
 }
 
 .customers__text {
@@ -218,12 +224,12 @@ button:hover {
 /* Quality */
 
 .quality__container {
-  padding: 100px 0;
+  padding: 120px 20px;
   display: flex;
 }
 
 .quality__description {
-  max-width: 550px;
+  max-width: 40%;
 }
 
 .quality__header {
@@ -242,8 +248,8 @@ button:hover {
 }
 
 .quality__img {
-  width: 76%;
-  margin: 20px 0 0 120px;
+  width: 100%;
+  padding: 40px 20px 0 150px;
 }
 
 /* Steps */
@@ -599,9 +605,6 @@ button:hover {
 
 .fa-arrow-left,
 .fa-arrow-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: #010102;
   background-color: #ebecec;
   width: 48px;
@@ -719,5 +722,59 @@ button:hover {
   border-radius: 999px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+}
+
+
+/* small phones, tablets, large smartphones */
+
+@media (max-width: 728px) {
+
+  .row {
+    width: 680px;
+    flex-direction: column;
+    
+  }
+
+  h1,
+  .customers__text {
+
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  p,
+  .email__box,
+  .landing_text, 
+  .quality__description {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  ul {
+    display: none;
+
+  }
+
+  .customers__img {
+    margin: 0 160px 100px;
+  }
+
+  .quality__img {
+    padding: 0;
+  }
+  
+  
+ .features__para {
+  padding: 0 20px;
+
+ }
+
+
+
+
+
+
+
 }
