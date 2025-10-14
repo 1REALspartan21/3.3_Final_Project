@@ -7,6 +7,7 @@
     <title>Jaime Web Duplicate</title>
     <link rel="stylesheet" href="3.3_FINALproject.css">
     <script src="https://kit.fontawesome.com/5bd94bf6a9.js" crossorigin="anonymous"></script>
+    <script src="3.3index.js"></script>
 
 
 
@@ -30,6 +31,20 @@
                 </ul>
                 <button class="nav__button">Sign up</button>
             </div>
+            </div>
+            <button class="btn__menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu btn__menu--close">
+                    <i class="fa-solid fa-square-xmark"></i>
+                </button>
+                <ul class="menu--links">
+                    <li class="menu__list"><a href="#" class="menu__link">About</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Pricing</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Blog</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link no cursor">Contact Us</a></li>
+                </ul>
             </div>
         </nav>
     </section>
@@ -123,7 +138,7 @@
 
     <section class="quality__container row">
         <div class="quality__description">
-            <h2><span>QUALITY WORK</span></h2>
+            <h2 class="quality__title"><span>QUALITY WORK</span></h2>
             <h1 class="quality__header">Designed & Developed by <span>Professionals.</span></h1>
             <p class="quality__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quam
                 aliquam, laudantium obcaecati hic reiciendis ut dicta fugiat quas voluptatibus, vero repellendus
@@ -180,7 +195,7 @@
     </section>
     <section class="row">
         <div class="values__container">
-            <div>
+            <div class="value__description">
                 <h2>VALUES</h2>
                 <h1 class="values_header">We Always Abide by Our <span>Principles.</span>
                 </h1>
@@ -190,14 +205,17 @@
                 </p>
                 <div class="values__description">
                     <div>
-                        <div class="value__title"><i class="fa-solid fa-dollar-sign"></i>
+                        <div class="value__title">
+                            <div class="fa__dollar--wrapper">
+                            <i class="fa-solid fa-dollar-sign"></i></div>
                             <h3 class="values__title">Affordable</h3>
                         </div>
                         <p class="values__para value__para">We promise to offer you the best rate we can - at par with
                             the industry standard.</p>
                     </div>
                     <div>
-                        <div class="value__title"><i class="fa-solid fa-suitcase"></i>
+                        <div class="value__title">
+                            <div class="fa__suitcase--wrapper"><i class="fa-solid fa-suitcase"></i></div>
                             <h3 class="values__title">Professionalism</h3>
                         </div>
                         <p class="values__para value__para">We assure you that our templates are designed and created by
@@ -312,9 +330,11 @@
                         </div>
                     </div>
                     <div class="testimonial__buttons">
-                        <button class="fa-solid fa-arrow-left"></button>
+                            <div class="test_left--arrow"><i class="fa-solid fa-arrow-left"></i></div>
                         <div class="vertical__divide"></div>
-                        <button class="fa-solid fa-arrow-right"></button>
+                        <div class="test__right--arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -377,9 +397,12 @@
                 </div>
                 <div class="footer__copyright">&copy 2018 Treact Inc. All Rights Reserved.</div>
                 <div class="footer__icons">
-                    <button class="fa-brands fa-facebook-f"></button>
-                    <button class="fa-brands fa-twitter"></button>
-                    <button class="fa-brands fa-youtube"></button>
+                   <div class="facebook__wrapper"><i class="fa-brands fa-facebook-f"></i></div>
+                   <div class="twitter__wrapper"><i class="fa-brands fa-x-twitter"></i></div>
+                   <div class="youtube__wrapper"><i class="fa-brands fa-youtube"></i></div>
+                    
+
+
                 </div>
             </div>
     </section>
