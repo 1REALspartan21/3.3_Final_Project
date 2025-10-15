@@ -16,9 +16,9 @@
 <body>
     <section class="row">
         <nav class="nav__bar">
-            <div class="nav__title">
+            <div class="nav__wrapper">
                 <img src="assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" class="logoT" alt="">
-                <h2>Treact</h2>
+                <h2 class="nav__title">Treact</h2>
             </div>
             <div class="nav__links">
                 <ul>
@@ -30,31 +30,33 @@
                         Login
                 </ul>
                 <button class="nav__button">Sign up</button>
-            </div>
-            </div>
-            <button class="btn__menu">
+            <button class="btn__menu" onclick= openMenu()>
                 <i class="fa-solid fa-bars"></i>
             </button>
             <div class="menu__backdrop">
-                <button class="btn__menu btn__menu--close">
+                <button class="btn__menu btn__menu--close" onclick= closeMenu()>
                     <i class="fa-solid fa-square-xmark"></i>
                 </button>
                 <ul class="menu--links">
                     <li class="menu__list"><a href="#" class="menu__link">About</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Pricing</a></li>
                     <li class="menu__list"><a href="#" class="menu__link">Blog</a></li>
+                    <li class="menu__list"><a href="#" class="menu__link">Sign Up</a></li>
                     <li class="menu__list"><a href="#" class="menu__link no cursor">Contact Us</a></li>
+                <button class="nav__button">Sign up</button>
                 </ul>
             </div>
+            </div>
+
         </nav>
     </section>
-    <section class="landing">
-        <div class="landing__row row">
-            <div class="landing__text">
+    <section class="row">
+        <div class="landing__row">
+            <div class="landing__text--wrapper">
                 <div>
                     <h1 class="landing__header"> Beautiful React Templates <span>for you.</span></h1>
                 </div>
-                <p class="landing__description">
+                <p class="landing__para">
                     Our templates are easy to setup, understand and customize. Fully modular components with a variety
                     of pages and components.
                 </p>
@@ -67,20 +69,20 @@
                 </div>
                 <img class="customers__img" src="assets/customers-logo-strip.680ac7c2e8ae28161d2c.png">
             </div>
-            <div>
-                <img src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" class="landing__img"
+            <div class="landing__img--wrapper">
+                <img  class="landing__img" src="assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" 
                     alt="">
             </div>
         </div>
     </section>
 
     <section class="row">
-        <div class="features">
+        <div class="features__wrapper">
             <h2 class="features__title"><span>FEATURES</span></h2>
             <h1 class="features__header">We Have Amazing 
                 <span class="purple">Service.</span></h1>
             <h3 class="features__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, minim similique
-                at voluptatibus natus obcaecati accusamus, saepe voluptatum vitae.</h3>
+                at voluptatibus natus obcaecati, saepe voluptatum vitae.</h3>
         </div>
         <div class="features__container">
 
@@ -147,7 +149,8 @@
                 Learn More
             </button>
         </div>
-        <div><img  class="quality__img" src="assets/hero-screenshot-no-border.png" alt=""></div>
+        <div class="quality__img--wrapper">
+            <img  class="quality__img" src="assets/hero-screenshot-no-border.png" alt=""></div>
     </section>
     <section class="row">
         <div class="steps__container">
@@ -195,7 +198,7 @@
     </section>
     <section class="row">
         <div class="values__container">
-            <div class="value__description">
+            <div class="values__wrapper">
                 <h2>VALUES</h2>
                 <h1 class="values_header">We Always Abide by Our <span>Principles.</span>
                 </h1>

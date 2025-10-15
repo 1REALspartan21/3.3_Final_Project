@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 
+outline: 1px dotted green;
 }
 
 html {
@@ -38,7 +39,7 @@ li:hover,
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 900;
   color: #243e63;
   letter-spacing: 1.5px;
@@ -58,13 +59,13 @@ h2 {
 /* Nav Bar */
 
 .nav__bar {
-  padding: 20px 0;
+  padding: 32px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav__title {
+.nav__wrapper {
   width: 130px;
   display: flex;
   justify-content: space-around;
@@ -74,6 +75,13 @@ h2 {
 .logoT,
 .footer__logo {
   max-width: 36px;
+}
+
+.nav__title {
+  color: #243e63;
+  font-size: 24px;
+  font-weight: 900;
+
 }
 
 .nav__links {
@@ -108,26 +116,40 @@ button:hover {
   text-align: center;
   border: none;
   color: #6415ff;
+  display: none;
 }
 
 .menu__backdrop {
   position: absolute;
-  background-color: #f56565;
+  background-color: #684444;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 100;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  visibility: hidden;
+  transition: all 300ms ease;
+  opacity: 0;
 }
 
-.menu--links {
+.menu--open .menu__backdrop {
+display: flex;
+visibility: visible;
+opacity: 1;
+}
+
+.menu__links {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.menu__list {
+  padding: 32px 0;
 }
 
 .menu__list {
@@ -146,29 +168,27 @@ button:hover {
   top: 20px;
   padding: 8px;
   color: white;
-
 }
 
 /* Landing Page */
 
 .landing__row {
   width: 100%;
-  padding: 100px 0;
+  padding: 100px 0 130px;
   display: flex;
-}
-
-.landing__text {
-  width: 100%;
 }
 
 .landing__header {
   padding: 50px 0 40px;
 }
 
-.landing__description {
-  padding: 20px 0;
-  width: 80%;
-  font-size: 20px;
+.landing__para {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  word-spacing: 1.5px;
 }
 
 .email__box {
@@ -179,20 +199,30 @@ button:hover {
 }
 
 .landing__email {
-  margin-left: 26px;
-  width: 65%;
-  height: 60px;
+  padding: 36px;
+  width: 100%;
+  height: 40px;
   font-size: 16px;
   border: hidden;
 }
 
 .landing__button {
-  width: 140px;
-  margin: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: auto;
+  width: 50%;
+  height: 50px;
+  border-radius: 999px;
+  
+}
+
+.landing__img--wrapper {
+  width: 130%;
+  align-content: center;
 }
 
 .customers__img {
-  width: 300px;
+  width: 70%;
   opacity: 0.4;
 }
 
@@ -210,49 +240,51 @@ button:hover {
 
 /* Features */
 
-.features {
-  padding: 100px 0;
+.features__wrapper {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .features__title {
   text-align: center;
-  padding: 40px 0 24px;
+  padding-bottom: 24px;
 }
 
 .features__header {
+  font-size: 52px;
   margin: 0 16px 16px;
   text-align: center;
 }
 
 .features__para {
-  padding: 20px 260px;
+  width: 50%;
+  margin: 16px;
   text-align: center;
   opacity: 0.3;
 }
 
 .features__container {
+  padding: 48px;
   margin: 0 auto;
-  max-width: 1000px;
-  padding: 60px 0;
+  max-width: 100%;
+  max-height: fit-content;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .features__services {
-  padding: 20px;
+  padding: 32px 26px;
   display: flex;
 }
 
-.features__row {
-  width: 200px;
-  padding: 0 20px 20px;
-}
-
 .features__icon {
-  padding: 12px;
-  height: 50px;
-  width: 50px;
+  padding: 18px;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
   border: 2px solid rgb(212, 212, 212);
   border-radius: 50px;
   display: flex;
@@ -260,14 +292,19 @@ button:hover {
   align-items: center;
 }
 
+.features__row {
+  width: 200px;
+  height: 150px;
+}
+
 .features__container--title {
-  padding: 8px 0;
-  font-size: 20px;
+  margin-bottom:  10px;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .features__services--para {
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0.5;
   line-height: 1.7;
 }
@@ -275,7 +312,7 @@ button:hover {
 /* Quality */
 
 .quality__container {
-  padding: 120px 20px;
+  padding: 120px 0 120px 20px;
   display: flex;
 }
 
@@ -284,7 +321,8 @@ button:hover {
 }
 
 .quality__header {
-  margin: 16px 0;
+  font-size: 52px;
+  margin: 20px 0;
   max-width: 500px;
 }
 
@@ -295,12 +333,15 @@ button:hover {
 }
 
 .learn__more {
-  margin: 28px 0 0;
+  margin-top: 28px;
+}
+
+.quality__img--wrapper {
+  padding: 2% 5% 2% 12%;
 }
 
 .quality__img {
   width: 100%;
-  padding: 40px 20px 0 150px;
 }
 
 /* Steps */
@@ -362,15 +403,16 @@ button:hover {
   display: flex;
 }
 
+.values__wrapper {
+  padding-left: 20px;
+}
+
 .values_header {
   width: 80%;
   padding: 20px 0 50px;
   font-size: 48px;
 }
 
-.values__description {
-  display: flex;
-}
 
 .values__para {
   margin: 0 0 36px;
@@ -379,6 +421,10 @@ button:hover {
   font-size: 20px;
   font-weight: 400;
   color: #718096;
+}
+
+.values__description {
+  display: flex;
 }
 
 .value__title {
@@ -662,7 +708,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #010102;
+  color: #6415ff;
   background-color: #ebecec;
   width: 48px;
   height: 48px;
@@ -679,7 +725,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 
 .banner__phrase {
@@ -726,7 +772,7 @@ button:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 50px 0 40px;
+  padding-bottom:  50px;
 }
 
 .footer__title {
@@ -758,7 +804,7 @@ button:hover {
   font-size: 20px;
   font-weight: 800;
   color: #faf7fc;
-  margin: 12px;
+  margin: 24px 12px;
 }
 
 .footer__copyright {
@@ -778,8 +824,8 @@ button:hover {
   align-items: center;
   color: #010102;
   background-color: #ebecec;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   border-radius: 50px;
   margin: 8px;
   cursor: pointer;
@@ -807,6 +853,14 @@ button:hover {
     text-align: center;
   }
 
+  .nav__button {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+  
   p,
   .email__box,
   .landing_text, 
@@ -817,7 +871,6 @@ button:hover {
 
   ul {
     display: none;
-
   }
 
   .customers__img {
