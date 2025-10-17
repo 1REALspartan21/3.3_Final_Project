@@ -1007,7 +1007,7 @@ button:hover {
 
 /* for small phones */
 
-@media (max-width: 350px) {
+@media (max-width: 380px) {
   .menu__link {
     font-size: 24px;
   }
